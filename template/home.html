@@ -1,0 +1,81 @@
+{%extends 'base.html'%}
+
+
+{%block title%}Welcome to SUSPAA.in{%endblock%}
+
+
+{%block content%}
+
+
+<div class="owl-carousel">
+
+        {% for cat in cats %}
+        
+        <div class="card item element" >
+
+            <div class="img-container">
+
+                <img src="/media/{{cat.image}}" class="responsive-img" alt="">
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-title">
+
+                    <h3>{{cat.title}}</h3>
+
+                </div>    
+
+                    <p class="truncate">{{cat.description}}</p>
+
+                   
+            <div class="container center-align mt20">
+
+                <a href="/category/{{cat.url}}" class="btn bg-primary ">View</a>
+
+            </div>
+
+            </div>
+
+
+        </div>
+
+        {%endfor%}
+
+</div>
+
+
+<div class="container">
+
+    {%for p in posts%}
+
+    <div class = "row">
+
+        <div class="col s12 m8" >
+
+            {{p.content|truncatewords:60|safe}}
+
+        </div>  
+        
+
+
+        <div class="col s12 m4">
+
+            <img src="/media/{{p.image}}"  class="responsive-img" style="margin-top: 50px;">
+               
+        </div>
+
+    </div>
+
+    <div class="mt20">
+
+        <a href="/blog/{{p.url}}" class="btn bg-primary">Read more..</a>
+
+    </div>
+            
+    {%endfor%}
+
+</div>
+
+{%endblock%}

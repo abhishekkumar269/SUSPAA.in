@@ -1,0 +1,26 @@
+.bg-primary{
+    background-color:#477091 !important;
+}
+
+.mt20{
+
+    margin-top:20px;
+}
+
+.container-custom{
+
+    width: 90% !important;
+    margin:auto;
+    
+}
+
+.item{
+    margin-left: 10px;
+}
+
+.element
+{
+    padding: 10px;
+    
+}
+

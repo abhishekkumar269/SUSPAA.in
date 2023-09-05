@@ -1,0 +1,13 @@
+<div class="container-custom">
+    {%for cat in cats%}
+    <div class="row">
+         
+        <div class="col s12 12 l12">
+
+            {{cat.title}}
+
+        </div>
+
+    </div>
+    {%endfor%}    
+</div>
