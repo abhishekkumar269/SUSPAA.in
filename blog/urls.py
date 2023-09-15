@@ -7,6 +7,7 @@ from .views import home, post, category
 
 urlpatterns = [
    
+    path('', home),
     path('home/', home),
     path('blog/<slug:url>',post),
     path('category/<slug:url>',category)
