@@ -132,7 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MATERIAL_ADMIN_SITE = {
     'HEADER': 'SUSPAA.in Admin Panel',  # Admin site header
-    'TITLE': 'SUSPAA.in ',  # Admin site title
+    'TITLE': 'SUSPAA.in',  # Admin site title
 }
 
 
